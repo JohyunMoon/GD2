@@ -2,4 +2,21 @@ img {
     max-width: 100%
 }
 
-/* comments look like this */
+<style>h1 {
+    color: hsl(299, 32%, 60%);
+    font-size: 36px;
+}
+
+h2 {
+    color: hsl(0, 0%, 40%);
+}
+
+p {
+    color: hsl(0, 0%, 40%);
+}
+
+a {
+    color: hsl(299, 32%, 60%);
+}
+
+</style>
