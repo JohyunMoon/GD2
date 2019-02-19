@@ -4,21 +4,20 @@ img {
 
 h1 {
     color: hsl(299, 32%, 60%);
-    font-size: 36px;
+    font-size: 48px;
     font-family: 'PT Serif', serif;
 }
 
 h2 {
     color: hsl(0, 0%, 40%);
-    font-family:
+    font-size: 21px;
+    font-family: 'PT Serif', serif;
 }
 
 p {
     color: hsl(0, 0%, 40%);
     font-size: 18px;
-    font-family: 'asap';
-    sans-serif;
-    sans-serif;
+    font-family: 'quicksand', serif;
 }
 
 a {
