@@ -2,21 +2,25 @@ img {
     max-width: 100%
 }
 
-<style>h1 {
+h1 {
     color: hsl(299, 32%, 60%);
     font-size: 36px;
+    font-family: 'PT Serif', serif;
 }
 
 h2 {
     color: hsl(0, 0%, 40%);
+    font-family:
 }
 
 p {
     color: hsl(0, 0%, 40%);
+    font-size: 18px;
+    font-family: 'asap';
+    sans-serif;
+    sans-serif;
 }
 
 a {
     color: hsl(299, 32%, 60%);
 }
-
-</style>
