@@ -1,25 +1,67 @@
+body {
+    background-color: hsl(254, 0%, 100%);
+    border: 3px;
+}
+
+figure {
+    float: right;
+    margin-right: 40px;
+    padding: 30px;
+
+
+}
+
+iframe {
+    margin: 60px;
+}
+
 img {
-    max-width: 100%
+    max-width: 100%;
+}
+
+figcaption {
+    color: hsl(0, 0%, 40%);
+    font-family: 'amiri', serif;
 }
 
 h1 {
     color: hsl(299, 32%, 60%);
+    text-align: center;
+    font-family: 'amiri', serif;
     font-size: 48px;
-    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    margin: 30px;
 }
 
 h2 {
     color: hsl(0, 0%, 40%);
+    text-align: center;
+    font-family: 'amiri', serif;
     font-size: 21px;
-    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    margin: 30px;
 }
 
 p {
     color: hsl(0, 0%, 40%);
-    font-size: 18px;
     font-family: 'quicksand', serif;
+    font-size: 18px;
+    margin: 60px;
 }
 
 a {
+    color: hsl(299, 32%, 60%);
+    font-weight: bold;
+}
+
+blockquote {
+    color: hsl(0, 0%, 40%);
+    font-family: 'amiri', serif;
+    font-size: 24px;
+    font-weight: normal;
+    padding: 60px;
+}
+
+.class2 {
     color: hsl(299, 32%, 60%);
 }
