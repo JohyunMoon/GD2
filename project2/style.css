@@ -1,0 +1,81 @@
+a {
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.card {
+    background-image: url(images/movie.jpg);
+    background-size: cover;
+    height: 276.75px;
+    position: relative;
+    width: 500px;
+
+}
+
+.date {
+    border: 0px;
+    font-size: 8px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+div.playbox {
+    border: 2px solid #ffffff;
+    font-weight: normal;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 85px;
+    text-align: center;
+    width: 100px;
+}
+
+div.transbox {
+    background: #e2a3a3;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+}
+
+div.transbox:hover {
+    opacity: 1.0;
+}
+
+
+h2 {
+    border-bottom: 0px;
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 20px;
+    text-align: left;
+    width: 70%;
+}
+
+img {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 480px;
+}
+
+
+p {
+    color: #ffffff;
+    font-family: 'montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: lighter;
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    width: 80%;
+}
