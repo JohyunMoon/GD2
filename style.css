@@ -8,16 +8,13 @@ img {
     align-content: center;
 }
 
-.pikespark {
+
+.full {
+    max-width: 100%;
     text-align: center;
     image-rendering: 100%;
-    max-width: 100%;
     position: relative;
-
-
 }
-
-.fullwidth {}
 
 .figcaption {
     text-align: left;
