@@ -2,26 +2,35 @@
     text-align: center;
 }
 
-.pikespark {
-    text-align: center;
-    image-rendering: 100%;
-    max-width: 100%;
-}
-
-
-figcaption {
-    text-align: left;
-    max-width: 60%;
-    position: relative;
-}
-
 img {
     max-width: 60%;
     position: relative;
     align-content: center;
 }
 
+.pikespark {
+    text-align: center;
+    image-rendering: 100%;
+    max-width: 100%;
+    position: relative;
+
+
+}
+
+.fullwidth {}
+
+.figcaption {
+    text-align: left;
+    max-width: 40%;
+    position: relative;
+}
+
+
 header {
     text-align: center;
 
+}
+
+.afternoon {
+    text-align: center;
 }
