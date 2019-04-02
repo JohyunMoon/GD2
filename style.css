@@ -1,0 +1,147 @@
+.afternoon {
+    text-align: center;
+}
+
+figcaption {
+    font-family: 'montserrat', san-serif;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px
+}
+
+.food {
+    text-align: center;
+}
+
+.full,
+.full2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    font-family: 'montserrat', san-serif;
+    font-weight: initial;
+}
+
+.head {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-size: cover;
+    background-image: url(images/god.jpg)
+}
+
+header {
+    text-align: center;
+    font-family: 'montserrat', san-serif;
+    letter-spacing: 10px;
+
+}
+
+img {
+    width: 60%;
+    position: relative;
+}
+
+
+.morning {
+    text-align: center;
+}
+
+.time {
+    color: black;
+    padding-left: 80px;
+    font-weight: normal;
+}
+
+.time2 {
+    font-weight: normal;
+}
+
+.time3 {
+    color: white;
+    padding-left: 80px;
+}
+
+.night {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+@media (min-width:1280px) {
+
+    .afternoon::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .afterphoto {
+        float: left;
+        width: 33%;
+
+    }
+
+    .morning::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .morningphoto {
+        float: left;
+        width: 33%;
+    }
+
+
+    .night::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .nightphoto {
+        float: left;
+        width: 33%;
+    }
+
+    figure {
+        position: relative;
+    }
+
+    figure img {
+        transition: all 1s;
+    }
+
+    figure img:hover {
+        transform: scale(1.15);
+    }
+
+    figcaption {
+        display: block;
+        transition: all 1s;
+        max-width: 100%;
+    }
+
+    figcaption:hover {
+        transform: scale(1.15);
+        max-width: 100%;
+    }
+
+    .food {
+        float: left;
+        width: 50%;
+        padding-left: 350px;
+    }
+}
