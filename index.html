@@ -5,12 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>VCC Conference</title>
 </head>
 
 <body>
-    <h1>My heading</h1>
+    <header>
+        <h1>VCC</h1>
+        <div class="nav-bar">
+            <input id="toggle" class="menu-toggle" type="checkbox" aria-hidden="true">
+            <label for="toggle" class="nav-icon" aria-hidden="true">
+                Expand the menu
+                <span class="icon-line"></span>
+                <span class="icon-line"></span>
+                <span class="icon-line"></span>
+            </label>
+            <nav class="nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">Speakers</a></li>
+                    <li class="nav-item"><a href="#">Schedule</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="intro">
+            <h1>Visual Communication Conference</h1>
+            <p class=date>Pasadena, California </p>
+            <p class=date>May 4-6, 2019</p>
+            <div class="logo-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <p class="button"><a href="#" target="_blank">Buy Ticket</a></p>
+        </section>
+
+    </header>
+    <main>
+        <p class="discription">VCC (Visual Communication Conference) is the largest design conference about Visual
+            Communication.
+            We share our opinions, ideas together and try to find out better ways to communicate with people around the
+            world.
+            Experience the design trend through the world and meet with nearly 2,000 attendees from inside and outside
+            of
+            U.S.
+        </p>
+        <!-- https://www.howdesignlive.com/speakers-page/karen-faith?id=1047870 -->
+        <section class="speakers">
+            <h2>Speakers</h2>
+
+            <figure class="adam"><img src="images/adam.jpg" alt="Adam Conner-Simons">
+                <figcaption>Adam Conner-Simons</figcaption>
+                <figcaption>Head of Communications & Media Relations,Massachusetts Institute of Technology</figcaption>
+            </figure>
+            <figure class="aaron"><img src="images/aaron.jpg" alt="Aaron Ganci">
+                <figcaption>Aaron Ganci</figcaption>
+                <figcaption>Associate Professor of Visual Communication Design,
+                    Herron School of Art + Design, IUPUI</figcaption>
+            </figure>
+            <figure class="karen"><img src="images/karen.jpg" alt="Karen Faith">
+                <figcaption>Karen Faith</figcaption>
+                <figcaption>Ethnographer, Strategist, Facilitator
+                    Karen Faith, Inc.</figcaption>
+            </figure>
+        </section>
+
+        <section class="schedule">
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Topic</th>
+                    <th>Speaker</th>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>How MIT Gets Inventive with Digital Storytelling</td>
+                    <td>Adam Simons</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Good visual design for digital interfaces and in the translation</td>
+                    <td>Aaron Ganci</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>[WORKSHOP] Design Thinking Meets Radical Vulnerability: How To Cultivate A Whole-Person Empathy
+                        Practice</td>
+                    <td>Karen Faith</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
 </body>
+
 
 </html>

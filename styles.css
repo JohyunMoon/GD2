@@ -1,0 +1,577 @@
+.adam {
+    text-align: center;
+
+}
+
+.aaron {
+    text-align: center;
+}
+
+.karen {
+    text-align: center;
+}
+
+.button {
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+    font-family: "monserrat", sans-serif;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 14px 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "monserrat", sans-serif;
+    text-align: center;
+}
+
+.date {
+    margin: 0;
+}
+
+header {
+    text-align: left;
+    padding-left: 50px;
+
+}
+
+h1 {
+    max-width: 50px;
+    font-size: 30px;
+
+}
+
+
+
+.discription {
+    text-align: left;
+    padding: 50px;
+    max-width: 350px;
+}
+
+figcaption {
+    max-width: 400px;
+}
+
+#page-nav label,
+#page-nav ul,
+#page-nav li {
+    display: inline-block;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+/* == Base styles == */
+* {
+    font-family: "monserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+/* == Nav bar == */
+.nav-bar {
+    padding-top: 60px;
+    position: relative;
+}
+
+@media (min-width: 900px) {
+    .nav-bar {
+        padding-top: 0;
+    }
+
+    .logo-container {
+        animation-delay: 2s;
+        /* This means the animation starts 2 seconds after the page laods */
+        animation-duration: 3s;
+        /* This means the animation runs for 5 seconds */
+        animation-fill-mode: forwards;
+        /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
+        animation-iteraton-count: 1;
+        /* This means the animation runs once and does not repeat */
+        animation-name: fadein;
+        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+        opacity: 0;
+        position: relative;
+    }
+
+    /* These are the shared styles for BOTH circles */
+    .circle {
+        animation-delay: 3s;
+        /* This means the animation starts 2 seconds after the page laods */
+        animation-duration: 7s;
+        /* This means the animation runs for 5 seconds */
+        animation-fill-mode: forwards;
+        /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
+        animation-iteraton-count: 1;
+        /* This means the animation runs once and does not repeat */
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 300px;
+        position: relative;
+        width: 300px;
+    }
+
+    /* These are different styles applied ONLY to the first/top circle */
+    .circle:first-of-type {
+        animation-name: circle-top;
+        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+    }
+
+    /* These are different styles applied ONLY to the last/bottom circle */
+    .circle:last-of-type {
+        animation-name: circle-bottom;
+        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+        top: -120px;
+    }
+
+    /* CSS animation effects */
+    @keyframes fadein {
+
+        /*  At the start of the animation, the opacity of the element is zero, then it gradually increases until it is 1 -- thus fading in  */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes circle-top {
+
+        /*  At the start of the animation, the top circle is at the top of the container, then it moves down halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
+        0% {
+            top: 0;
+        }
+
+        45% {
+            top: 150px;
+        }
+
+        55% {
+            top: 150px;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    @keyframes circle-bottom {
+
+        /*  At the start of the animation, the bottom circle is at the bottom of the container, then it moves up halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
+        0% {
+            top: -120px;
+        }
+
+        45% {
+            top: -150px;
+        }
+
+        55% {
+            top: -150px;
+        }
+
+        100% {
+            top: -120px;
+        }
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+}
+
+/* == Nav list == */
+.nav-items {
+    list-style: none;
+    margin: 0;
+    max-height: 1px;
+    overflow: hidden;
+    padding: 0;
+    transition: all 1s cubic-bezier(0.325, 1, 0.22, 1);
+}
+
+.nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    display: block;
+    border-bottom: 1px solid white;
+    color: black;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1em;
+    text-decoration: none;
+    transition: opacity 0.5s ease;
+}
+
+.nav-item a:link,
+.nav-item a:visited {
+    color: black;
+    text-align: center;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+@media (min-width: 900px) {
+    .nav-items {
+        max-height: none;
+        text-align: center;
+    }
+
+    .nav-item {
+        display: inline-block;
+    }
+
+    .nav-item a {
+        border: none;
+        display: inline-block;
+        height: 60px;
+        line-height: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+}
+
+/* == Hamburger icon == */
+.nav-icon {
+    border: none;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 27px;
+    position: absolute;
+    right: 13px;
+    text-align: center;
+    text-indent: -9999px;
+    text-shadow: 0 0 0 gray;
+    top: 20px;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 27px;
+}
+
+.icon-line {
+    background: black;
+    border-radius: 0.2rem;
+    display: block;
+    height: 0.2rem;
+    left: 0;
+    position: absolute;
+    text-indent: 0;
+    transition: all 0.6s cubic-bezier(0.5, 0.1, 0, 1.2);
+    width: 27px;
+}
+
+.icon-line:first-child {
+    top: 0;
+}
+
+.icon-line:nth-child(2) {
+    top: 8px;
+}
+
+.icon-line:nth-child(3) {
+    top: 16px;
+}
+
+@media (min-width: 900px) {
+    .nav-icon {
+        display: none;
+    }
+}
+
+/* == Hamburger functionality == */
+.menu-toggle {
+    display: none;
+    visibility: hidden;
+}
+
+.menu-toggle:checked~nav .nav-items {
+    height: auto;
+    max-height: 30rem;
+    transition: all 2s cubic-bezier(0.5, 1, 0.22, 1);
+}
+
+.menu-toggle:checked~label .icon-line:first-child {
+    top: 0px;
+    transform: translateX(-8px) rotate(-45deg) translateY(12px);
+    width: 27px;
+}
+
+.menu-toggle:checked~label .icon-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked~label .icon-line:nth-child(3) {
+    top: 14px;
+    transform: translateX(-5px) rotate(45deg) translateY(-8px);
+    width: 27px;
+}
+
+.logo-container {
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteraton-count: 1;
+    animation-name: fadein;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.circle {
+    animation-delay: 3s;
+    /* This means the animation starts 2 seconds after the page laods */
+    animation-duration: 7s;
+    /* This means the animation runs for 5 seconds */
+    animation-fill-mode: forwards;
+    /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
+    animation-iteraton-count: 1;
+    /* This means the animation runs once and does not repeat */
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 200px;
+    position: relative;
+    width: 200px;
+}
+
+/* These are different styles applied ONLY to the first/top circle */
+.circle:first-of-type {
+    animation-name: circle-top;
+    /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+}
+
+/* These are different styles applied ONLY to the last/bottom circle */
+.circle:last-of-type {
+    animation-name: circle-bottom;
+    /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+    top: -100px;
+}
+
+/* CSS animation effects */
+@keyframes fadein {
+
+    /*  At the start of the animation, the opacity of the element is zero, then it gradually increases until it is 1 -- thus fading in  */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes circle-top {
+
+    /*  At the start of the animation, the top circle is at the top of the container, then it moves down halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
+    0% {
+        top: 0;
+    }
+
+    45% {
+        top: 100px;
+    }
+
+    55% {
+        top: 100px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes circle-bottom {
+
+    /*  At the start of the animation, the bottom circle is at the bottom of the container, then it moves up halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
+    0% {
+        top: -100px;
+    }
+
+    45% {
+        top: -100px;
+    }
+
+    55% {
+        top: -100px;
+    }
+
+    100% {
+        top: -100px;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+    margin: 50px auto 20px;
+    ;
+}
+
+th {
+    height: 50px;
+}
+
+.intro {
+    position: relative;
+}
+
+@media (min-width: 900px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .date {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .discription {
+        max-width: 650px;
+        padding-left: 130px;
+    }
+
+    .logo-container {
+        animation-delay: 2s;
+        /* This means the animation starts 2 seconds after the page laods */
+        animation-duration: 3s;
+        /* This means the animation runs for 5 seconds */
+        animation-fill-mode: forwards;
+        /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
+        animation-iteraton-count: 1;
+        /* This means the animation runs once and does not repeat */
+        animation-name: fadein;
+        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+        opacity: 0;
+        position: absolute;
+        padding-right: 200px;
+    }
+
+    /* These are the shared styles for BOTH circles */
+    .circle {
+        animation-delay: 3s;
+        /* This means the animation starts 2 seconds after the page laods */
+        animation-duration: 7s;
+        /* This means the animation runs for 5 seconds */
+        animation-fill-mode: forwards;
+        /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
+        animation-iteraton-count: 1;
+        /* This means the animation runs once and does not repeat */
+        border: 1px solid black;
+        border-radius: 50%;
+        height: 300px;
+        position: relative;
+        width: 300px;
+    }
+
+    /* These are different styles applied ONLY to the first/top circle */
+    .circle:first-of-type {
+        animation-name: circle-top;
+        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+    }
+
+    /* These are different styles applied ONLY to the last/bottom circle */
+    .circle:last-of-type {
+        animation-name: circle-bottom;
+        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
+        top: -120px;
+    }
+
+    /* CSS animation effects */
+    @keyframes fadein {
+
+        /*  At the start of the animation, the opacity of the element is zero, then it gradually increases until it is 1 -- thus fading in  */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes circle-top {
+
+        /*  At the start of the animation, the top circle is at the top of the container, then it moves down halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
+        0% {
+            top: 0;
+        }
+
+        45% {
+            top: 150px;
+        }
+
+        55% {
+            top: 150px;
+        }
+
+        100% {
+            top: 0;
+        }
+    }
+
+    @keyframes circle-bottom {
+
+        /*  At the start of the animation, the bottom circle is at the bottom of the container, then it moves up halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
+        0% {
+            top: -120px;
+        }
+
+        45% {
+            top: -150px;
+        }
+
+        55% {
+            top: -150px;
+        }
+
+        100% {
+            top: -120px;
+        }
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    .intro {
+        position: relative;
+        padding-left: 80px;
+    }
+}
