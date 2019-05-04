@@ -39,6 +39,7 @@ body {
 header {
     text-align: left;
     padding-left: 50px;
+    --color-color: black;
 
 }
 
@@ -211,7 +212,7 @@ img {
 .nav-item a {
     display: block;
     border-bottom: 1px solid white;
-    color: black;
+    color: var(--color-color);
     font-size: 1.2rem;
     margin: 0;
     padding: 1em;
