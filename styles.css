@@ -59,6 +59,7 @@ h1 {
 
 figcaption {
     max-width: 400px;
+
 }
 
 #page-nav label,
@@ -452,6 +453,16 @@ th {
 }
 
 @media (min-width: 900px) {
+
+    .adam,
+    .arron,
+    .karen {
+        text-align: center;
+        float: left;
+        padding: 0;
+
+    }
+
     h1 {
         font-size: 50px;
     }
@@ -574,5 +585,23 @@ th {
     .intro {
         position: relative;
         padding-left: 80px;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* structural styles */
+    figure {
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
