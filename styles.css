@@ -4,26 +4,25 @@
 }
 
 .button {
+    color: var(--color-black);
     display: inline-block;
     font-family: "monserrat", sans-serif;
     text-align: center;
     text-decoration: none;
-    color: var(--color-black);
 }
 
 .button a {
+    border: 2px solid var(--color-black);
     color: var(--color-black);
-    border: 2px solid black;
-    color: var(--color-black);
-    text-decoration: none;
     display: block;
     padding: 14px 25px;
+    text-decoration: none;
 }
 
 body {
+    font-family: "monserrat", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "monserrat", sans-serif;
     text-align: center;
 }
 
@@ -32,17 +31,16 @@ body {
 }
 
 header {
-    text-align: left;
-    padding-left: 50px;
     color: var(--color-black);
+    padding-left: 50px;
+    text-align: left;
 }
 
 h1 {
+    font-size: 20px;
+    max-width: 50px;
     padding-top: 20px;
     text-transform: uppercase;
-    max-width: 50px;
-    font-size: 20px;
-
 }
 
 h2 {
@@ -51,15 +49,14 @@ h2 {
 
 .discription {
     font-size: 15px;
-    text-align: left;
-    padding: 50px;
     max-width: 400px;
+    padding: 50px;
+    text-align: left;
 }
 
 figcaption {
-    padding: 10px;
     max-width: 350px;
-
+    padding: 10px;
 }
 
 #page-nav label,
@@ -75,8 +72,8 @@ img {
 
 /* == Base styles == */
 * {
-    font-family: "monserrat", sans-serif;
     box-sizing: border-box;
+    font-family: "monserrat", sans-serif;
 }
 
 /* == Nav bar == */
@@ -107,14 +104,14 @@ img {
 }
 
 .nav-item a {
-    display: block;
     border-bottom: 1px solid var(--color-white);
     color: var(--color-black);
+    display: block;
     font-size: 1.2rem;
     margin: 0;
     padding: 1em;
-    text-decoration: none;
     transition: opacity 0.5s ease;
+    text-decoration: none;
 }
 
 .nav-item a:link,
@@ -334,10 +331,9 @@ th {
 
 table {
     border-collapse: collapse;
-    width: 80%;
-    text-align: center;
     margin: 50px auto 20px;
-    ;
+    text-align: center;
+    width: 80%;
 }
 
 th {
@@ -355,42 +351,42 @@ td {
 }
 
 .overlay {
+    background: rgba(0, 0, 0, 0.7);
     position: fixed;
-    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    opacity: 0;
     transition: opacity 500ms;
     visibility: hidden;
-    opacity: 0;
 }
 
 .overlay:target {
-    visibility: visible;
     opacity: 1;
+    visibility: visible;
 }
 
 .popup {
+    background: var(--color-white);
+    border-radius: 5px;
     margin: 70px auto;
     padding: 20px;
     padding-top: 40px;
-    background: var(--color-white);
-    border-radius: 5px;
-    width: 50%;
     position: relative;
     transition: all 2s ease-in-out;
+    width: 50%;
 }
 
 .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
+    color: var(--color-black);
     font-size: 30px;
     font-weight: bold;
+    position: absolute;
+    right: 30px;
     text-decoration: none;
-    color: var(--color-black);
+    top: 20px;
+    transition: all 200ms;
 }
 
 .popup .content {
@@ -399,8 +395,8 @@ td {
 }
 
 footer {
-    padding: 30px;
     font-size: 10px;
+    padding: 30px;
 
 }
 
@@ -409,10 +405,9 @@ footer {
     .adam,
     .arron,
     .karen {
-        text-align: center;
         float: left;
         padding: 0;
-
+        text-align: center;
     }
 
 
@@ -536,15 +531,15 @@ footer {
     }
 
     .home {
-        position: relative;
         padding-left: 80px;
+        position: relative;
         text-transform: capitalize;
     }
 
     .clearfix:after {
+        clear: both;
         content: "";
         display: table;
-        clear: both;
     }
 
     ul {
@@ -553,7 +548,6 @@ footer {
     }
 
     figure {
-
         float: left;
         width: 25%;
     }
