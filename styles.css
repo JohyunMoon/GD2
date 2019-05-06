@@ -402,10 +402,7 @@ footer {
 
 @media (min-width: 900px) {
 
-    .adam,
-    .arron,
-    .karen {
-        float: left;
+    .speakers {
         padding: 0;
         text-align: center;
     }
@@ -549,7 +546,7 @@ footer {
 
     figure {
         float: left;
-        width: 25%;
+        width: 33%;
     }
 
 
