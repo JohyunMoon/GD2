@@ -1,20 +1,23 @@
+:root {
+    --color-black: hsl(59, 6%, 11%);
+    --color-white: hsl(59, 0%, 100%);
+}
+
 .button {
     display: inline-block;
     font-family: "monserrat", sans-serif;
     text-align: center;
+    text-decoration: none;
+    color: var(--color-black);
 }
 
 .button a {
+    color: var(--color-black);
     border: 2px solid black;
-    color: black;
+    color: var(--color-black);
     text-decoration: none;
     display: block;
     padding: 14px 25px;
-}
-
-.button:hover {
-    color: white;
-    background-color: black;
 }
 
 body {
@@ -31,11 +34,11 @@ body {
 header {
     text-align: left;
     padding-left: 50px;
-    --color-color: black;
-
+    color: var(--color-black);
 }
 
 h1 {
+    padding-top: 20px;
     text-transform: uppercase;
     max-width: 50px;
     font-size: 20px;
@@ -46,7 +49,6 @@ h2 {
     text-align: center;
 }
 
-
 .discription {
     font-size: 15px;
     text-align: left;
@@ -55,6 +57,7 @@ h2 {
 }
 
 figcaption {
+    padding: 10px;
     max-width: 350px;
 
 }
@@ -86,110 +89,6 @@ img {
     .nav-bar {
         padding-top: 0;
     }
-
-    .logo-container {
-        animation-delay: 2s;
-        /* This means the animation starts 2 seconds after the page laods */
-        animation-duration: 3s;
-        /* This means the animation runs for 5 seconds */
-        animation-fill-mode: forwards;
-        /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
-        animation-iteraton-count: 1;
-        /* This means the animation runs once and does not repeat */
-        animation-name: fadein;
-        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
-        opacity: 0;
-        position: relative;
-    }
-
-    /* These are the shared styles for BOTH circles */
-    .circle {
-        animation-delay: 3s;
-        /* This means the animation starts 2 seconds after the page laods */
-        animation-duration: 7s;
-        /* This means the animation runs for 5 seconds */
-        animation-fill-mode: forwards;
-        /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
-        animation-iteraton-count: 1;
-        /* This means the animation runs once and does not repeat */
-        border: 1px solid black;
-        border-radius: 50%;
-        height: 300px;
-        position: relative;
-        width: 300px;
-    }
-
-    /* These are different styles applied ONLY to the first/top circle */
-    .circle:first-of-type {
-        animation-name: circle-top;
-        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
-    }
-
-    /* These are different styles applied ONLY to the last/bottom circle */
-    .circle:last-of-type {
-        animation-name: circle-bottom;
-        /* The name of the animation that is associated with this selector -- see the CSS animation effects section below */
-        top: -120px;
-    }
-
-    /* CSS animation effects */
-    @keyframes fadein {
-
-        /*  At the start of the animation, the opacity of the element is zero, then it gradually increases until it is 1 -- thus fading in  */
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes circle-top {
-
-        /*  At the start of the animation, the top circle is at the top of the container, then it moves down halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
-        0% {
-            top: 0;
-        }
-
-        45% {
-            top: 150px;
-        }
-
-        55% {
-            top: 150px;
-        }
-
-        100% {
-            top: 0;
-        }
-    }
-
-    @keyframes circle-bottom {
-
-        /*  At the start of the animation, the bottom circle is at the bottom of the container, then it moves up halfway and holds there for a stretch -- to make the overlap point last -- then it returns to its original position  */
-        0% {
-            top: -120px;
-        }
-
-        45% {
-            top: -150px;
-        }
-
-        55% {
-            top: -150px;
-        }
-
-        100% {
-            top: -120px;
-        }
-    }
-
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
 }
 
 /* == Nav list == */
@@ -209,8 +108,8 @@ img {
 
 .nav-item a {
     display: block;
-    border-bottom: 1px solid white;
-    color: var(--color-color);
+    border-bottom: 1px solid var(--color-white);
+    color: var(--color-black);
     font-size: 1.2rem;
     margin: 0;
     padding: 1em;
@@ -220,7 +119,7 @@ img {
 
 .nav-item a:link,
 .nav-item a:visited {
-    color: black;
+    color: var(--color-black);
     text-align: center;
 }
 
@@ -262,14 +161,14 @@ img {
     right: 13px;
     text-align: center;
     text-indent: -9999px;
-    text-shadow: 0 0 0 gray;
+    text-shadow: 0 0 0 hsl(0, 0%, 43%);
     top: 20px;
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     width: 27px;
 }
 
 .icon-line {
-    background: black;
+    background: var(--color-black);
     border-radius: 0.2rem;
     display: block;
     height: 0.2rem;
@@ -347,7 +246,7 @@ img {
     /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
     animation-iteraton-count: 1;
     /* This means the animation runs once and does not repeat */
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     border-radius: 50%;
     height: 100px;
     position: relative;
@@ -429,7 +328,7 @@ img {
 table,
 td,
 th {
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     padding: 20px;
 }
 
@@ -450,9 +349,59 @@ td {
 
 }
 
-.intro {
+.home {
     position: relative;
     text-transform: capitalize;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    padding-top: 40px;
+    background: var(--color-white);
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.popup .content {
+    max-height: 20%;
+    overflow: auto;
+}
+
+footer {
+    padding: 30px;
+    font-size: 10px;
+
 }
 
 @media (min-width: 900px) {
@@ -507,7 +456,7 @@ td {
         /* This means the animation doesn't reset/undo itself -- the final animation frame is what stays when the animation is done */
         animation-iteraton-count: 1;
         /* This means the animation runs once and does not repeat */
-        border: 1px solid black;
+        border: 1px solid var(--color-black);
         border-radius: 50%;
         height: 300px;
         position: relative;
@@ -586,7 +535,7 @@ td {
         box-sizing: border-box;
     }
 
-    .intro {
+    .home {
         position: relative;
         padding-left: 80px;
         text-transform: capitalize;
@@ -606,7 +555,7 @@ td {
     figure {
 
         float: left;
-        width: 33%;
+        width: 25%;
     }
 
 
@@ -618,4 +567,10 @@ td {
     th {
         font-size: 30px;
     }
+
+    footer {
+        font-size: 20px;
+
+    }
+
 }
