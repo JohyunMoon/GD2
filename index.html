@@ -5,11 +5,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>VCC Conference</title>
 </head>
 
 <body>
-    <h1>My heading</h1>
+    <header>
+        <h1>vcc</h1>
+        <div class="nav-bar">
+            <input id="toggle" class="menu-toggle" type="checkbox" aria-hidden="true">
+            <label for="toggle" class="nav-icon" aria-hidden="true">
+                <span class="icon-line"></span>
+                <span class="icon-line"></span>
+                <span class="icon-line"></span>
+            </label>
+            <nav class="nav">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#speakers">Speakers</a></li>
+                    <li class="nav-item"><a href="#schedule">Schedule</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="home" class="home">
+            <h1>visual communication conference</h1>
+            <p class=date>pasadena, california </p>
+            <p class=date>may 4-6, 2019</p>
+            <div class="logo-container">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <p class="button"><a href="#" target="_blank">Buy Ticket</a></p>
+        </section>
+
+    </header>
+    <main>
+        <p class="discription">VCC (Visual Communication Conference) is the largest design conference about Visual
+            Communication.
+            We share our opinions, ideas together and try to find out better ways to communicate with people around the
+            world.
+            Experience the design trend through the world and meet with nearly 2,000 attendees from inside and outside
+            of
+            U.S.
+        </p>
+        <!-- https://www.howdesignlive.com/about-->
+        <section id="speakers" class="speakers">
+            <h2>Speakers</h2>
+            <ul class="clearfix">
+
+                <figure class="adam"><img src="images/adam.jpg" alt="Adam Conner-Simons">
+                    <figcaption>
+                        <h3>Adam Conner-Simons</h3>
+                        <p>Head of Communications & Media Relations,Massachusetts Institute of Technology</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="aaron"><img src="images/aaron.jpg" alt="Aaron Ganci">
+                    <figcaption>
+                        <h3>Aaron Ganci</h3>
+                        <p>Associate Professor of Visual Communication Design,
+                            Herron School of Art + Design, IUPUI</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="karen"><img src="images/karen.jpg" alt="Karen Faith">
+                    <figcaption>
+                        <h3>Karen Faith</h3>
+                        <p>Ethnographer, Strategist, Facilitator Karen Faith, Inc
+                        </p>
+                    </figcaption>
+                </figure>
+            </ul>
+        </section>
+
+        <section id="schedule" class="schedule">
+            <table>
+                <tr>
+                    <th>Day1</th>
+                    <th>Topic</th>
+                    <th>Speaker</th>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td> <a class="button" href="#popup1">How MIT Gets Inventive with Digital Storytellings</a>
+
+                        <div id="popup1" class="overlay">
+                            <div class="popup">
+                                <h2>How MIT Gets Inventive with Digital Storytellings</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <p> 6 years ago, MIT’s largest lab somehow had only 4,000 Twitter followers and
+                                        virtually no social media engagement. But by revamping their marketing strategy
+                                        and
+                                        thinking critically about target audiences, the Computer Science and Artificial
+                                        Intelligence Lab (CSAIL) now has nearly 100,000 followers and averages 100
+                                        retweets
+                                        per post.<p>
+
+                                            <p>In this talk you’ll learn some concrete tips for creating more engaging
+                                                content -
+                                                and, in the process, helping your clients tell the right stories to the
+                                                right
+                                                people.</p>
+                                            <!-- https://www.howdesignlive.com/speakers-page/adam-conner-simons?id=1113997 -->
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Adam Simons</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td> <a class="button" href="#popup2">Good visual design for digital interfaces</a>
+
+                        <div id="popup2" class="overlay">
+                            <div class="popup">
+                                <h2>Good visual design for digital interfaces</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <p> In this talk you'll learn about visual communication and user interface
+                                        in user-centered design.<p>
+                                            <!-- https://herron.iupui.edu/about/directory/profiles/ganci-aaron.html -->
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Aaron Ganci</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td><a class="button" href="#popup3">Design Thinking Meets Radical Vulnerability</a>
+
+                        <div id="popup3" class="overlay">
+                            <div class="popup">
+                                <h2>Design Thinking Meets Radical Vulnerability</h2>
+                                <a class="close" href="#">&times;</a>
+                                <div class="content">
+                                    <p> In this talk you'll will learn how to generate qualitative insights by better
+                                        understanding the lens through which we receive them: ourselves which is the
+                                        first step in human-centered design.<p>
+                                            <!-- https://www.howdesignlive.com/speakers-page/karen-faith?id=1047870 -->
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>Karen Faith</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <p>©VCC(Visual communication conference)2019</p>
+    </footer>
+
 </body>
 
 </html>
